@@ -25,7 +25,7 @@ try {
 }
 })
 
-app.get("/api/products/:lid", (req, res)=>{
+app.get("/api/products/:lid", async (req, res)=>{
     const id = req.params.lid
     try {
         const producto = await productManager.getProductById(parseInt(id))

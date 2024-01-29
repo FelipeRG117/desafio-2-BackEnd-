@@ -1,0 +1,102 @@
+[{
+    "title" : "God of war ",
+    "description" : "Un juego con mucha profundidad",
+    "img" : "SIN IMAGEN",
+    "code": "xbox aunque no este en xbox",
+    "stock" : "4000",
+    "category" : "Aventura Historia",
+    "status" : true,
+    "thumbnails" : [],
+    "id": 1
+},{
+    "title" : "Starfield",
+    "description" : "Un juego con grandes mundos",
+    "img" : "SIN IMAGEN",
+    "code": "xbox",
+    "stock" : "6000",
+    "category" : "Aventura Espacial",
+    "status" : true,
+    "thumbnails" : [],
+    "id": 2
+},{
+    "title" : "Skyrim ",
+    "description" : "Un juego pionero en exploracion inmersiva",
+    "img" : "SIN IMAGEN",
+    "code": "xbox",
+    "stock" : "10000",
+    "category" : "Aventura Exploracion",
+    "status" : true,
+    "thumbnails" : [],
+    "id": 3
+},{
+    "title" : "Assasins creed 4 ",
+    "description" : "Un juego con una gran historia y emotiva",
+    "img" : "SIN IMAGEN",
+    "code": "xbox",
+    "stock" : "8000",
+    "category" : "Aventura Historia",
+    "status" : true,
+    "thumbnails" : [],
+    "id": 4
+},{
+    "title" : "Assasins creed odysey",
+    "description" : "Un juego con una gran vista al mundo griego",
+    "img" : "SIN IMAGEN",
+    "code": "xbox",
+    "stock" : "4000",
+    "category" : "Aventura Historia",
+    "status" : true,
+    "thumbnails" : [],
+    "id": 5
+},{
+    "title" : "Battlefield 1",
+    "description" : "Un juego con grandes combates e inmersivo",
+    "img" : "SIN IMAGEN",
+    "code": "xbox",
+    "stock" : "4000",
+    "category" : "Guerra Historia",
+    "status" : true,
+    "thumbnails" : [],
+    "id": 6
+},{
+    "title" : "Moder warfare 2",
+    "description" : "Un juego con combates e historia buenisima",
+    "img" : "SIN IMAGEN",
+    "code": "xbox",
+    "stock" : "5000",
+    "category" : "Combate Tactico",
+    "status" : true,
+    "thumbnails" : [],
+    "id": 7
+},{
+    "title" : "Apex legends",
+    "description" : "Un juego con combate frenetico y rapido",
+    "img" : "SIN IMAGEN",
+    "code": "xbox",
+    "stock" : "8000",
+    "category" : "Combate",
+    "status" : true,
+    "thumbnails" : [],
+    "id": 8
+},{
+    "title" : "Fortnite en sus inicios",
+    "description" : "Un juego muy divertido y dinamico al igual que muy creativo",
+    "img" : "SIN IMAGEN",
+    "code": "xbox",
+    "stock" : "9000",
+    "category" : "Combate",
+    "status" : true,
+    "thumbnails" : [],
+    "id": 9
+},{
+    "title" : "Rainbow six sige",
+    "description" : "Un juego tactico y estrategico",
+    "img" : "SIN IMAGEN",
+    "code": "xbox ",
+    "stock" : "8000",
+    "category" : "Combate Tactico",
+    "status" : true,
+    "thumbnails" : [],
+    "id": 10
+},
+]
