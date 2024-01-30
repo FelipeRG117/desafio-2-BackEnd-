@@ -17,19 +17,18 @@ class ProductManager {
         try {
             const arrayProductos = await this.leerArchivo();
       
-    if (!title || !description || !price || !img ||!code  ||!stock || !category) {
+    if (!title || !description || !price || !code  ||!stock || !category) {
         console.log("Se necesitan todos los campos llenos");
         return; 
     }
     
-    if (this.products.some(item=> item.code === code)) {
+    if (arrayProductos.some(item => item.code === code)) {
        console
        .log("El codigo es igual y se repite"); 
        return;
     }
 
     const newProduct ={
-        id: ++ProductManager.id,
         title,
         description,
         price,
@@ -41,10 +40,10 @@ class ProductManager {
         thumbnails: thumbnails || []
     }
     if (arrayProductos.length > 0) {
-        ProductManager.ultId = arrayProductos.reduce((maxId, product) => Math.max(maxId, product.id), 0);
+        ProductManager.id = arrayProductos.reduce((maxId, product) => Math.max(maxId, product.id), 0);
       }
 
-      newProduct.id = ++ProductManager.ultId; 
+      newProduct.id = ++ProductManager.id; 
 
       arrayProductos.push(newProduct);
       await this.guardarArchivo(arrayProductos);
@@ -98,6 +97,7 @@ class ProductManager {
             await fs.writeFile(this.path, JSON.stringify(arrayProductos, null, 2))
         } catch (error) {
             console.log("Hubo un error al guardar", error );
+            throw error;
         }
 
     }
@@ -135,6 +135,7 @@ class ProductManager {
 
        } catch (error) {
         console.log("Ha habido un error al actualizar producto ", error);
+        throw error; 
        }
     }
 
