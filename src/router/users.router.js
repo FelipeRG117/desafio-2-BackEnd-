@@ -1,8 +1,9 @@
 const express = require("express")
 const router = express.Router()
+const ProductManager = require("../controllers/product-manager")
+const productManager = new ProductManager("./src/models/productos.json")
 
-
-router.get("/api/products", async (req,res)=>{
+router.get("/", async (req,res)=>{
     try {
         const limit = req.query.limit;
         const products = await productManager.getProducts()
@@ -18,7 +19,7 @@ router.get("/api/products", async (req,res)=>{
     }
     })
     
-    router.get("/api/products/:lid", async (req, res)=>{
+    router.get("/:lid", async (req, res)=>{
         const id = req.params.lid
         try {
             const producto = await productManager.getProductById(parseInt(id))
@@ -33,7 +34,7 @@ router.get("/api/products", async (req,res)=>{
         }
     })
     
-    router.post("/api/products", async (req, res)=>{
+    router.post("/", async (req, res)=>{
     const nuevoProducto = req.body;
     
     try {
@@ -45,7 +46,7 @@ router.get("/api/products", async (req,res)=>{
     }
     })
     
-    router.put("/api/products/:pid", async (req, res)=>{
+    router.put("/:pid", async (req, res)=>{
         let id = req.params.pid;
         const productoActualizado = req.body;
     
@@ -60,7 +61,7 @@ router.get("/api/products", async (req,res)=>{
     
     })
     
-    router.delete("/api/products/:delid", async (req,res)=>{
+    router.delete("/:delid", async (req,res)=>{
         let id = req.params.delid;
         try {
            await productManager.deleteProduct(parseInt(id))

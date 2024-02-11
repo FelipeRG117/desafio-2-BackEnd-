@@ -84,27 +84,15 @@
     "id": 7
   },
   {
-    "title": "Apex legends",
-    "description": "Un juego con combate frenetico y rapido",
-    "img": "SIN IMAGEN",
-    "pice": 4000,
-    "code": "xbox 360",
-    "stock": "8000",
-    "category": "Combate",
+    "title": "blue monday ",
+    "description": "desaslaaaaa",
+    "price": "1000",
+    "img": "Sin imagen",
+    "code": "rar",
+    "stock": "25",
+    "category": "mistica ",
     "status": true,
     "thumbnails": [],
     "id": 8
-  },
-  {
-    "title": "Fortnite en sus inicios",
-    "description": "Un juego muy divertido y dinamico al igual que muy creativo",
-    "img": "SIN IMAGEN",
-    "pice": 4000,
-    "code": "xbox series s ",
-    "stock": "9000",
-    "category": "Combate",
-    "status": true,
-    "thumbnails": [],
-    "id": 9
   }
 ]

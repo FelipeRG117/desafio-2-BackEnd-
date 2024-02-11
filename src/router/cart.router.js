@@ -1,8 +1,10 @@
 const express = require("express")
 const router = express.Router()
+const CartManager = require("../controllers/carts-manager")
+const cartManager = new CartManager("./src/models/carrito.json")
 
 //Ahora los metodos de carrito 
-router.post("/api/carts", async (req, res)=>{
+router.post("/", async (req, res)=>{
     const carrito = req.body;
     try {
         await cartManager.addProduct(carrito)

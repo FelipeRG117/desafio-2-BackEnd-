@@ -3,7 +3,7 @@
     "arr": [
       {
         "id": 1,
-        "quantity": 2
+        "quantity": 4
       },
       {
         "id": 2,
@@ -16,7 +16,7 @@
     "arr": [
       {
         "id": 1,
-        "quantity": 4
+        "quantity": 6
       }
     ],
     "id": 2
